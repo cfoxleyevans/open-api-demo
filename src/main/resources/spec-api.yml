@@ -1,0 +1,57 @@
+openapi: '3.0.2'
+
+info:
+  title: OpenApi Example
+  description: Example OpenAPI specification for the DWP National Engineering Roadshow.
+  version: 1.0.0
+
+servers:
+  - url: 'https://localhost:8080'
+
+paths:
+  /greeting:
+    get:
+      tags:
+        - greetings
+      summary: Get a greeting from the server
+      operationId: getGreeting
+      responses:
+        200:
+          description: Response containing the server generated greeting
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/GreetingDTO'
+
+  /greeting/{name}:
+    get:
+      tags:
+        - greetings
+      summary: Get a customised greeting from the server
+      operationId: getCustomisedGreeting
+      parameters:
+        - in: path
+          name: name
+          required: true
+          schema:
+            type: string
+      responses:
+        200:
+          description: Response containing the customised server generated greeting
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/GreetingDTO'
+
+components:
+  schemas:
+    GreetingDTO:
+      type: object
+      properties:
+        greetine:
+          description: The server generated greeting
+          type: string

@@ -11,9 +11,11 @@ You should be able to check out this repo and have a fully functional project.
 
 Various tags have been left in the repo at various stages of completion
 
-| Tag            | Info                                                         |
-|----------------|--------------------------------------------------------------| 
-| initial-commit | This is the empty project with no api routes or spec defined | 
+| Tag            | Info                                                             |
+|----------------|------------------------------------------------------------------| 
+| initial-commit | This is the empty project with no api routes or spec defined     |
+| routes         | This is the implementation of the routes with no spec            | 
+| spec           | This is the addition of the spec to match the implemented routes | 
  
 ### Useful links
 For further reference, please consider taking a look at the following resources

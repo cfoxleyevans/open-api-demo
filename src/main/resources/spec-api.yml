@@ -21,9 +21,7 @@ paths:
           content:
             application/json:
               schema:
-                type: array
-                items:
-                  $ref: '#/components/schemas/GreetingDTO'
+                $ref: '#/components/schemas/GreetingDTO'
 
   /greeting/{name}:
     get:
@@ -43,9 +41,7 @@ paths:
           content:
             application/json:
               schema:
-                type: array
-                items:
-                  $ref: '#/components/schemas/GreetingDTO'
+                $ref: '#/components/schemas/GreetingDTO'
 
 components:
   schemas:

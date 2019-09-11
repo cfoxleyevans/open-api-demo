@@ -17,6 +17,7 @@ Various tags have been left in the repo at various stages of completion
 | routes         | This is the implementation of the routes with no spec            | 
 | spec           | This is the addition of the spec to match the implemented routes | 
 | dto-generation | This shows the generation of dto objects from the specification  |
+| server-stub    | This shows the generation server stubs to meet the specification |
  
 ### Useful links
 For further reference, please consider taking a look at the following resources

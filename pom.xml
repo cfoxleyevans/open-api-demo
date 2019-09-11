@@ -81,32 +81,12 @@
               <generatorName>spring</generatorName>
               <configOptions>
                 <sourceFolder>src/gen/java/main</sourceFolder>
+                <useTags>true</useTags>
                 <java8>true</java8>
+                <interfaceOnly>true</interfaceOnly>
               </configOptions>
               <modelPackage>uk.gov.dwp.roadshow.generated.rest.model</modelPackage>
-            </configuration>
-          </execution>
-        </executions>
-      </plugin>
-      <!--OpenAPI Plugin-->
-      <plugin>
-        <groupId>org.openapitools</groupId>
-        <artifactId>openapi-generator-maven-plugin</artifactId>
-        <version>4.1.1</version>
-        <executions>
-          <execution>
-            <id>generate-dto-objects</id>
-            <goals>
-              <goal>generate</goal>
-            </goals>
-            <configuration>
-              <inputSpec>${project.basedir}/src/main/resources/spec-api.yml</inputSpec>
-              <generatorName>spring</generatorName>
-              <configOptions>
-                <sourceFolder>src/gen/java/main</sourceFolder>
-                <java8>true</java8>
-              </configOptions>
-              <modelPackage>uk.gov.dwp.roadshow.generated.rest.model</modelPackage>
+              <apiPackage>uk.gov.dwp.roadshow.generated.rest</apiPackage>
             </configuration>
           </execution>
         </executions>

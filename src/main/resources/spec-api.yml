@@ -52,6 +52,6 @@ components:
     GreetingDTO:
       type: object
       properties:
-        greetine:
+        greeting:
           description: The server generated greeting
           type: string

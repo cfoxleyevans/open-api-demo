@@ -16,6 +16,7 @@ Various tags have been left in the repo at various stages of completion
 | initial-commit | This is the empty project with no api routes or spec defined     |
 | routes         | This is the implementation of the routes with no spec            | 
 | spec           | This is the addition of the spec to match the implemented routes | 
+| dto-generation | This shows the generation of dto objects from the specification  |
  
 ### Useful links
 For further reference, please consider taking a look at the following resources
